@@ -1,0 +1,37 @@
+<html>
+ <head>
+   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+ </head>
+
+ <body >
+   <a-scene embedded arjs >
+
+
+     
+     
+     
+      <a-entity    id ="monster"
+                cursor-listener
+                scale=" 0.02 0.02 0.02"
+                position="0 0 -2.5"
+                rotation="0 0 0"
+                animation-mixer="clip: *"
+               
+                gltf-model="/animation1/scene.gltf"
+                sound="src: url(animationSound1.mp3); autoplay: true; volume:20;" 
+       
+      ></a-entity> 
+
+
+     
+
+      
+
+      
+
+      <a-marker-camera preset="hiro"></a-marker-camera>
+   </a-scene>
+ </body>
+</html>
